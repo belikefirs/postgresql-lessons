@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("person")
+@RequestMapping("/person")
 @RequiredArgsConstructor
 public class PersonController {
 
     private final PersonDao personDao;
 
-    @GetMapping("")
+    @GetMapping()
     public List<Person> findAll() {
         return personDao.findAll();
     }
