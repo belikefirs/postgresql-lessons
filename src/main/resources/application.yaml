@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://ec2-52-212-157-46.eu-west-1.compute.amazonaws.com:5432/d31ivc6hbuoe71
+    username: mqqxhsmnitefbc
+    password: 8ec57346829a41d8e55a509ff0c081db02a418e8956cc13944bb04a4fe57bd25
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate.format_sql: true
+
+
