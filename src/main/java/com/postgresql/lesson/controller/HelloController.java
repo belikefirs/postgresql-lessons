@@ -10,6 +10,6 @@ public class HelloController {
 
     @GetMapping("")
     public String helloAlert() {
-        return "Hello World!";
+        return "Hello Pipeline!";
     }
 }
